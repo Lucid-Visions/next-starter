@@ -9,7 +9,7 @@ const Input = (): ReactElement => {
   return (
     <div>
       <p>Enter your name:</p>
-      <input value={name} onChange={(e) => setName(e.target.value)} />
+      <input className="border" value={name} onChange={(e) => setName(e.target.value)} />
     </div>
   );
 };
