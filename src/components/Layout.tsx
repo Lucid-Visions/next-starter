@@ -16,18 +16,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props): React
     </Head>
     <header>
       <nav>
-        <Link href="/">
-          <a>Home</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/about">
-          <a>About</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/users">
-          <a>Users List</a>
-        </Link>{' '}
-        | <a href="/api/users">Users API</a>
+        <Link href="/">Home</Link> | <Link href="/recoil-example-page-1">Recoil Example</Link>
       </nav>
     </header>
     {children}
