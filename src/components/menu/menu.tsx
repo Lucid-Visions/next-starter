@@ -20,20 +20,18 @@ const Menu = ({ pathname }: Props): ReactElement => {
   ];
 
   return (
-    <div>
-      <div className="flex space-x-4">
-        {navItems.map((item: NavigationItem) => (
-          <MenuItem
-            id={item.key}
-            active={item.navigateTo === pathname}
-            navigateTo={item.navigateTo}
-            key={item.key}
-            text={item.text}
-            // icon={<item.icon size={16} />}
-            onClick={item.onClick}
-          />
-        ))}
-      </div>
+    <div className="flex space-x-4">
+      {navItems.map((item: NavigationItem) => (
+        <MenuItem
+          id={item.key}
+          active={item.navigateTo === pathname}
+          navigateTo={item.navigateTo}
+          key={item.key}
+          text={item.text}
+          // icon={<item.icon size={16} />}
+          onClick={item.onClick}
+        />
+      ))}
     </div>
   );
 };
