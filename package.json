@@ -5,6 +5,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
     "type-check": "tsc",
     "lint": "eslint './src/**/*.{js,ts,tsx}' --max-warnings=0",
     "lint:fix": "eslint './src/**/*.{js,ts,tsx}' --fix",
@@ -13,10 +15,14 @@
     "test:coverage": "jest — coverage"
   },
   "dependencies": {
+    "autoprefixer": "^10.2.5",
     "next": "latest",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "recoil": "^0.2.0"
+    "recoil": "^0.2.0",
+    "tailwindcss": "^2.1.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.6",
@@ -30,7 +36,6 @@
     "@types/recoil": "^0.0.1",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
-    "autoprefixer": "^9",
     "classnames": "^2.2.6",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
@@ -41,10 +46,8 @@
     "eslint-plugin-react": "^7.21.5",
     "husky": "^4.3.0",
     "jest": "^26.6.3",
-    "postcss": "^7",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.2.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "ts-jest": "^26.4.4",
     "typescript": "4.0"
   },

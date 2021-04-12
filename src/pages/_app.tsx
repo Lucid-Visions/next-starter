@@ -4,7 +4,7 @@
  *
  */
 import React, { ReactElement } from 'react';
-import '../styles/tailwind.css';
+import '../assets/tailwind.css';
 import type { AppProps } from 'next/app';
 import { RecoilRoot } from 'recoil';
 
