@@ -12,11 +12,6 @@ const Menu = ({ pathname }: Props): ReactElement => {
       text: 'Home',
       navigateTo: '/',
     },
-    {
-      key: 'recoil-example-page-1',
-      text: 'Recoil Example',
-      navigateTo: '/recoil-example-page-1',
-    },
   ];
 
   return (
