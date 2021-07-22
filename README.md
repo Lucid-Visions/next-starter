@@ -8,4 +8,3 @@ This is an opinionated Next.js starter that was createad originally using `npx c
 - prettier
 - jest and enzyme
 - git hooks for lint and test
-- Recoil
